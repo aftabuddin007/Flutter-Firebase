@@ -27,11 +27,15 @@ class HomePage extends StatelessWidget {
           ),
         ],
       ),
-      body: Center(
-        child: Text(
+      body: ListView(
+        children: [
+           Text(
           "Welcome, ${user?.email ?? 'User'}!",
           style: const TextStyle(fontSize: 18),
         ),
+        SizedBox(height: 20,),
+        Text("v"),
+        ],
       ),
     );
   }
